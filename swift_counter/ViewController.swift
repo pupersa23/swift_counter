@@ -8,13 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private var counterAmount: Int = 0
 
+    @IBOutlet weak var changingButton: UIButton!
+    @IBOutlet weak var changingCounter: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
     }
 
-
+    @IBAction func buttonDidTup(_ sender: Any) {
+        counterAmount += 1
+        changingCounter.text = "\(counterAmount)"
+    }
+    
 }
 
