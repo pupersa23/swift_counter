@@ -11,14 +11,14 @@ class ViewController: UIViewController {
     private var counterAmount: Int = 0
 
     @IBOutlet weak var changingButton: UIButton!
-    @IBOutlet weak var changingCounter: UILabel!
+    @IBOutlet weak var changingCounterLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    @IBAction func buttonDidTup(_ sender: Any) {
+    @IBAction func counterButtonDidTap(_ sender: Any) {
         counterAmount += 1
-        changingCounter.text = "\(counterAmount)"
+        changingCounterLabel.text = "\(counterAmount)"
     }
     
 }
